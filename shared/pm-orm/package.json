@@ -1,0 +1,25 @@
+{
+  "name": "pm-orm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc && tsc-alias",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "prisma:generate": "prisma generate",
+    "prisma:seed": "ts-node ./src/seed.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prisma": "^4.7.1",
+    "prisma-zod-generator": "^0.8.2",
+    "tsc-alias": "^1.7.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.7.1",
+    "zod": "^3.20.2"
+  }
+}
